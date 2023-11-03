@@ -18,3 +18,27 @@ Product Reviews: A field to store product reviews and ratings.
 Your specific product database table may include additional fields depending on your business requirements, such as custom attributes or metadata specific to your products.
 
 Here's an example SQL statement to create the "Products" table with the mentioned fields:
+
+        CREATE TABLE Products (
+            ProductID INT AUTO_INCREMENT PRIMARY KEY,
+            ProductName VARCHAR(100),
+            Description TEXT,
+            Category VARCHAR(50),
+            Price DECIMAL(10, 2),
+            StockQuantity INT,
+            Manufacturer VARCHAR(100),
+            Supplier VARCHAR(100),
+            SKU VARCHAR(20),
+            Barcode VARCHAR(20),
+            Weight DECIMAL(8, 2),
+            Length DECIMAL(8, 2),
+            Width DECIMAL(8, 2),
+            Height DECIMAL(8, 2),
+            ReleaseDate DATE,
+            ProductImage VARCHAR(255),
+            ProductURL VARCHAR(255),
+            IsFeatured TINYINT(1),
+            IsAvailable TINYINT(1),
+            ProductReviews TEXT
+        );
+        
